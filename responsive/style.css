@@ -68,11 +68,11 @@ footer {
 }
 
 #footerright {
-	width: 40%;
+	width: 45%;
+	margin: 5% 3%;
 	float: right;
 }
 
 #footerright img {
 	width: 100%;
-	height: 100%;
 }
