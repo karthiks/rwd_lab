@@ -13,6 +13,10 @@ body {
 	float: left;
 }
 
+#logo img {
+	width: 100%;
+}
+
 nav {
 	width: 50%; /* 512 / 1024 */
 	float: right;
@@ -22,7 +26,7 @@ nav {
 
 nav li {
 	display: inline-block;
-	margin: 10px 17px;
+	margin: 10px 1%;
 	font-size: 19px;
 	text-transform: uppercase;
 }
@@ -74,5 +78,49 @@ footer {
 }
 
 #footerright img {
-	width: 100%;
+	width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+/*
+	body {
+		background-color: black;
+	}
+ */
+
+	nav {
+		width: 65%;
+		margin-top: 25px;
+	}
+
+	ul#cols li {
+		width: 100%;
+		margin: 10px 0px;
+		padding: 1%;
+	}
+
+	ul#cols li img {
+		width: 20%;
+		margin-right: 2%;
+		float: left;
+	}
+
+	#footerleft, #footerright {
+		float: none;
+		width: 98%;
+		marigin: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		clear: left;
+		width: 100%;
+	}
+
+	#logo {
+		float: none;
+		margin: auto;
+		width: 40%;
+	}
 }
